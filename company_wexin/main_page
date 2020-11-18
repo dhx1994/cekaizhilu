@@ -1,0 +1,11 @@
+from selenium.webdriver.common.by import By
+
+
+class MainPage:
+    def __init__(self, driver):
+        self.driver = driver
+
+    def add_menber(self):
+        self.driver.find_element(By.CSS_SELECTOR, '.frame_nav_item_title:ntd_child(2)')
+        self.driver.find_element(By.CSS_SELECTOR, '.js_add_member:NTD_CHILD(2)')
+        return AddmenberPage()
