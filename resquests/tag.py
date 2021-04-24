@@ -83,8 +83,8 @@ class Tag(BaseApi):
                     group_idss.append(group_ids_tmp)
                 else:
                     group_idss.append(group_id)
-            t = self.delete_group(group_idss)
-        return t
+            r = self.delete_group(group_idss)
+        return r
 
     def update(self, id, name):
         data = {'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/edit_corp_tag',
