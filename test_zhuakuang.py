@@ -1,11 +1,6 @@
-from time import sleep
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pytest
-from selenium.webdriver.common.by import By
-
-from utils import BaseApi
 
 
 class TestOptions():

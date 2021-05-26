@@ -15,10 +15,10 @@ class TestTestdemo():
         print(cookies)
 
     def test_options(self):
-        all_handle = self.driver.window_handles
-        if self.driver.current_window_handle != 'CDwindow-4A0CC3A6ED7832EAAF3C2D20CD463003':
-            self.driver.switch_to.window('CDwindow-4A0CC3A6ED7832EAAF3C2D20CD463003')
-        print(self.driver.title)
+        # all_handle = self.driver.window_handles
+        # if self.driver.current_window_handle != 'CDwindow-4A0CC3A6ED7832EAAF3C2D20CD463003':
+        #     self.driver.switch_to.window('CDwindow-4A0CC3A6ED7832EAAF3C2D20CD463003')
+        # print(self.driver.title)
         self.driver.find_element_by_css_selector(
             ".index_service_cnt_itemWrap:nth-child(2) .index_service_cnt_item_title").click()
         sleep(5)
