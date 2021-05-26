@@ -1,6 +1,4 @@
-import datetime
-
-from resquests.base_api import BaseApi
+from resquests.utils.base_api import BaseApi
 
 
 class Tag(BaseApi):

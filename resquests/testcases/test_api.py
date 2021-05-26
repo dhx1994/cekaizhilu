@@ -1,6 +1,4 @@
-import datetime
-
-from resquests.tag import Tag
+from resquests.apiobject.tag import Tag
 
 
 class TestApi:
@@ -20,6 +18,7 @@ class TestApi:
         ]
         group_name = 'TMP00123'
         r = self.tag.add_defect(group_name, tag)
+        print(r)
         assert r
 
     def test_delete(self):
@@ -31,4 +30,4 @@ class TestApi:
         id = 'daf'
         name = '标签'
         r = self.tag.update_defect(id, name)
-        print(r.json())
+        assert r

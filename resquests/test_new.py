@@ -1,8 +1,7 @@
 import json
 
 import requests
-import pytest
-from resquests.base_api import BaseApi
+from resquests.utils.base_api import BaseApi
 
 
 class TestNew():
