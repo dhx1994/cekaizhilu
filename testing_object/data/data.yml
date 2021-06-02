@@ -15,8 +15,23 @@ data:
   "/manage/systemAccount/getVerificationCode":
     "phone": "19115902451"
   "/sass/version/sassListVersion":
-    "pagesize": "4"
-    "pagenum": "1"
-    "sassListteamdto":
-      "versionName": "1.0"
+    "pagesize": 4
+    "pagenum": 1
+    "sassListTeamDTO":
+      "versionName": '1.0'
       "versionType": 1
+  "/sass/version/updateVersionStatus":
+    "versionid": "25"
+    "status": 1
+  "/sass/version/createNewVersion":
+    "downloadPath": "/programs/file/path"
+    "versionCode": 1
+    "versionDescription": "dhx_data"
+    "versionName": "0.1"
+    "versionType": 1
+  "/sass/notice/sassListNoice":
+    "pagesize": 4
+    "pagenum": 1
+  "/sass/notice/updateNoticeStatus":
+    "NoticeId": "58"
+    "isTrue": 1
