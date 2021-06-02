@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-from web_po.podemo.login_page import LoginPage
-from web_po.podemo.register_page import RegisterPage
+from web_po.podemo.po.login_page import LoginPage
+from web_po.podemo.po.register_page import RegisterPage
 
 
 class IndexPage:

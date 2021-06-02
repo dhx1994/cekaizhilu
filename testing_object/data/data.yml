@@ -1,0 +1,22 @@
+#环境信息
+"env":
+  "test": "http://118.24.255.132:8088"
+  "pro": "pass"
+data:
+  "/manage/systemAccount/login":
+    "account":
+      - "admin"
+      - "error"
+      - ""
+    "password":
+      - "123456"
+      - "456789"
+      - ""
+  "/manage/systemAccount/getVerificationCode":
+    "phone": "19115902451"
+  "/sass/version/sassListVersion":
+    "pagesize": "4"
+    "pagenum": "1"
+    "sassListteamdto":
+      "versionName": "1.0"
+      "versionType": 1
