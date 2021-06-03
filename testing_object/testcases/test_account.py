@@ -60,3 +60,6 @@ class TestAccount():
         r = self.sassnotice.notice_updateNoticeStatus()
         r.status_code == 200
         r.json()["code"] == 1
+
+    def test_11(self):
+        pass
