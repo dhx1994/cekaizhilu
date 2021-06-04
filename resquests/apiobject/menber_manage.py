@@ -43,14 +43,7 @@ class ManageMenber(BaseApi):
         return self.send(data)
 
     def delete_menber(self):
-        go_menber = []
-        result = self.get_department_menber()
-        menberlist = result.json()["userlist"]
-        for i in menberlist:
-            go_menber.append(menberlist["userid"])
-        if "fsfsdfs" in go_menber:
-            pass
-        else:
+        if not self.is_menber_exist("fsfsdfs"):
             self.create_menber("fsfsdfs")
         data = {"url": "https://qyapi.weixin.qq.com/cgi-bin/user/delete",
                 "method": "get",
@@ -68,3 +61,20 @@ class ManageMenber(BaseApi):
                            "userid": "duhengxin"},
                 "json": {}}
         return self.send(data)
+
+    def large_delete_menber(self):
+        data = {"url": "https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete",
+                "method": "post",
+                "params": {"access_token": self.token},
+                "json": {"useridlist": ["userid1", "userid2"]
+                         }
+                }
+        return self.send(data)
+
+    def is_menber_exist(self, useridlist):
+        result = self.get_department_menber()
+        for i in result.json()["userlist"]:
+            if useridlist in i["userid"]:
+                return i["userid"]
+        print("不存在该标签")
+        return False
