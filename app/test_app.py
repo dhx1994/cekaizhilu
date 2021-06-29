@@ -20,6 +20,11 @@ class Testcase():
         caps["automationName"] = "UiAutomator1"
         # caps["settings[waitForIdleTimeout]"] = 0
         # 关键  localhost:4723  本机ip:server端口
+        '''获取appPackage,appActivity 
+        Mac / Linux:
+        adb logcat | grep - i activitymanager
+        Windows:
+        adb logcat | findstr / i activitymanager'''
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
 
     def ec(self, locater):
